@@ -6,6 +6,8 @@ describe('Transition helpers', () => {
   it('should parse duration from node property', () => {
     var el = document.createElement('div');
 
+    console.log(props)
+
     el.style[props.duration] = '1.4s'
 
     expect(transition.end._parseDuration(el)).to.equal(1400)
