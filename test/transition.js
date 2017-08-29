@@ -3,10 +3,8 @@ var transition = require('../src/transition')
 var props = transition.properties;
 
 describe('Transition helpers', () => {
-  it('should parse duration from node property', () => {
+  xit('should parse duration from node property', () => {
     var el = document.createElement('div');
-
-    console.log(props)
 
     el.style[props.duration] = '1.4s'
 
